@@ -90,4 +90,14 @@ from country_stats
 )
 select *
 from ranked_date
-where rank_total_country_account_cnt<=10 or rank_total_country_sent_cnt<=10
+where rank_total_country_account_cnt<=10 or rank_total_country_sent_cnt<=10select distinct
+  country,
+  total_country_account_cnt,
+  total_country_sent_cnt,
+  rank_total_country_account_cnt,
+  rank_total_country_sent_cnt
+from ranked_date
+where rank_total_country_account_cnt <= 10
+   or rank_total_country_sent_cnt <= 10
+order by rank_total_country_account_cnt,
+         rank_total_country_sent_cnt
