@@ -15,3 +15,6 @@ SQL projects demonstrating data analysis skills using SQL queries.
 
 ## SQL-інструменти
 CTE, JOIN, LEFT JOIN, UNION ALL, COUNT(), SUM(), віконні функції, DENSE_RANK().
+## Візуалізація
+
+![Графік аналізу](graph1.png)
